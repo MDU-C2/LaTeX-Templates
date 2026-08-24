@@ -1,39 +1,62 @@
-\documentclass[times]{thesisMDU}
-\usepackage[british,style=iso]{datetime2}  
-\usepackage[pdfusetitle, allcolors=black, hidelinks, pdftex]{hyperref} 
+% DVA490/DVA473 project description template
+% Version 1.0, 2023-06-27
+% Authors: Emil Persson and Henrik Falk
 
-% MASTER THESIS TEMPLATE MODIFIED FOR PROPOSAL BY HENRIK.FALK@MDH.SE
+\documentclass[11pt,a4paper]{article}
 
-\fancyHeader{Short Preliminary Title}{Authors Name1, Name2, Name3, Name4}
+\usepackage[T1]{fontenc}
+\usepackage[swedish,british]{babel}
+\usepackage{newtxtext}
+\usepackage[left=25mm,right=25mm,top=14mm,bottom=18mm,includefoot]{geometry}
+\usepackage{graphicx}
 
-\university{Mälardalen University}
-
-\department{School of Innovation Design and Engineering\\ Västerås, Sweden}
-
-\subject{Master Thesis Proposal \\ Course Code: XXX000}
-\thesisTitle{Preliminary Title For The Thesis}
-
-\addAuthor{Student One}{student.one@student.mdu.se}
-\addAuthor{Student Two}{student.two@student.mdu.se}
-
-\addSupervisor{Examiner}{First Lastname}{Mälardalen University, Västerås}
-\addSupervisor{Supervisor}{First Lastname}{Mälardalen University, Västerås}
-\addSupervisor{Supervisor}{First Lastname}{Company Name, City}
-
-
-\theDate{\today} 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\raggedbottom
 
 \begin{document}
-\titlePage
 
-\mainmatter
-% ===== Content: Modify the structure according to your needs =======
-\input{sections/proposal}
+\includegraphics[width=27mm]{logo.pdf}
 
-% ============================= References ============================
-\newpage
-\bibliographystyle{plainnat}
-\bibliography{references}
-\addcontentsline{toc}{section}{References}
+\vspace{-2mm}
+\begin{center}
+  % Use a concise title that reflects the project's purpose and scope.
+  {\LARGE\bfseries Project title}\\[0.4em]
+  % Replace with the submission date and project owner or organisation.
+  \textbf{Date, Author or organisation}
+\end{center}
+
+% Describe the current situation, problem or opportunity, relevant previous work,
+% and the events that led to the project.
+\section{Background}
+
+% Explain why the project should be undertaken, what it should resolve, and how
+% it supports the organisation's or stakeholders' broader goals.
+\section{Purpose}
+
+% State specific, measurable, achievable, relevant and time-bound goals, followed
+% by the concrete objectives needed to reach them.
+\section{Goals and Objectives}
+
+% Define what the project includes and excludes, including its tasks, functions,
+% affected areas and other boundaries.
+\section{Scope}
+
+\section{Requirements}
+% Describe conditions or tasks required for successful project execution and
+% delivery.
+\subsection{Project Requirements}
+
+% Describe required functions, features, performance and design constraints of
+% the resulting product or service.
+\subsection{Product Requirements}
+
+% Define the quantitative or qualitative criteria used to determine whether the
+% project has achieved its goals and purpose.
+\section{Success Criteria}
+
+% Provide the key contact's name, role, email, phone number and availability.
+% An accepted project requires at least 30 minutes of mentoring each week.
+\section{Contact Information and Availability}
 
 \end{document}
